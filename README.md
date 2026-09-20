@@ -42,3 +42,7 @@ To add additional features including:
 
 
 
+### \##Required Package
+
+As this is intended to be run without any dependencies jupyter is there to manage the project and idna is there to test against.
+
