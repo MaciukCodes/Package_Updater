@@ -1,20 +1,27 @@
 
 # %%
-# Sorry if this import hurts just give me the giggles to do it
-from func_update import get_updates, to_update, updates, subprocess
+from update_helpers import get_updates, to_update, updates
+import subprocess
 
 
+# %%
 # testing purposes so I don't acidently forget to set versions
 subprocess.run(['pip', 'install', 'idna==3.16','six==1.16'])
 
-# def update(change):
 
 # %%
+
+## TO DO
+# run file thorugh pep 8 checker (or look up pep 8)
+
+
+# these are just an example of the functions to do a quick check
+
 current = get_updates()
 
 print('Before', current)
 
-to_keep = ['six']
+to_keep = []
 
 change = to_update(current, to_keep)
 
