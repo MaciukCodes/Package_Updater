@@ -13,6 +13,8 @@ To create a no package dependant script to help install updates.
 ### \##Features
 
 * Lists out of date packages
+* Allows a list of packages as input to remove from the updater 
+* Updates provided packages to last released update (will adjust for customized versions later)
 
 
 
@@ -26,9 +28,13 @@ Currently none only a file to be ran in python interpreter
 
 run the command:
 
-C:\\projects > py Updater.py
+C:\\projects > py p\_updater.py
 
-from the directory you want to check the python packages from and having either the updater in that directory or the complete path to the Updater file
+from the directory you want to check the python packages from and having either the updater in that directory or the complete path to the Updater file.
+
+Or
+
+Import func\_update.py and use the functions accordingly.
 
 
 
@@ -37,12 +43,10 @@ from the directory you want to check the python packages from and having either 
 To add additional features including:
 
 * improving modularity by converting it to a Python package.
-* Allowing the user to select and deselect packages easily.
-* Installing updates.
-
-
+* Allowing the user to select and deselect package versions.
+* 
 
 ### \##Required Package
 
-As this is intended to be run without any dependencies jupyter is there to manage the project and idna is there to test against.
+As this is intended to be run without any dependencies jupyter is there to manage the project, idna and six are being used to test with.
 
